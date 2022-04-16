@@ -13,4 +13,12 @@ function longestWord(sen) {
   const longestWordArr = sorted.filter(function (word) {
     return word.length === sorted[0].length;
   });
+
+  //   Check if there's more than one array value
+  if (longestWordArr.length === 1) {
+    return longestWordArr[0];
+  } else {
+    return longestWordArr;
+  }
 }
+console.log(longestWord("practice-algorithms, javascript-cardio-algoritms"));
