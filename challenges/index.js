@@ -8,4 +8,9 @@ function longestWord(sen) {
   const sorted = wordArr.sort(function (a, b) {
     return b.length - a.length;
   });
+
+  //   if multiple words put in an array
+  const longestWordArr = sorted.filter(function (word) {
+    return word.length === sorted[0].length;
+  });
 }
