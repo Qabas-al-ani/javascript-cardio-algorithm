@@ -1,5 +1,7 @@
 // longest word of a string
 // Solution word
 function longestWord(sen) {
-  return longestSen;
+  //   created filleted array
+
+  const wordArr = sen.ToLowerCase().match(/[a-z0-9]+/g);
 }
